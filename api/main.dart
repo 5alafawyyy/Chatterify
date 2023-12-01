@@ -10,7 +10,7 @@ late MessageRepository messageRepository;
 Future<HttpServer> run(Handler handler, InternetAddress ip, int port) {
   final dbClient = SupabaseClient(
     Env.SUPABASE_URL,
-    Env.SUPABASE_SERVICE_KEY, // Use it only in the server, never on the client side.
+    Env.SUPABASE_SERVICE_ROLE_KEY, // Use it only in the server, never on the client side.
   );
 
   messageRepository = MessageRepository(dbClient: dbClient);
