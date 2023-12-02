@@ -1,33 +1,33 @@
 name: chatterify
 description: Chat App with Flutter, Dart Frog & WebSockets
 
-publish_to: 'none'
+publish_to: "none"
 
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.1.5 <4.0.0'
+  sdk: ">=3.1.5 <4.0.0"
 
 dependencies:
-  flutter:
-    sdk: flutter
-
   cupertino_icons: ^1.0.2
   envied: ^0.5.2
+  flutter:
+    sdk: flutter
+  http: 1.1.0
+  models:
+    path: packages/models
   supabase_flutter: ^1.10.25
-
+  web_socket_channel: ^2.4.0
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
-
   build_runner: ^2.4.7
   envied_generator: ^0.5.2
   flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
 
 flutter:
   uses-material-design: true
-  
   # assets:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
